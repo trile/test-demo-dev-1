@@ -1,0 +1,6 @@
+apiVersion: v2
+name: "test-demo-dev-1-api"
+version: "0.0.1"
+description: API layer for test-demo-dev-1
+appVersion: "0.0.1"
+type: application
