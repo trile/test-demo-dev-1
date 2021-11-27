@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  test-demo-dev-1-api:
+    build:
+      context: test_demo_dev_1_api
+    ports:
+      - "8080:8080"
+  test-demo-dev-1-ui:
+    build:
+      context: test-demo-dev-1-ui
+      args:
+        APP_SERVER_HOST: localhost
+        APP_SERVER_PORT: 8080
+    ports:
+      - "80:80"
+    depends_on:
+      - test-demo-dev-1-api
+    links:
+      - test-demo-dev-1-api
