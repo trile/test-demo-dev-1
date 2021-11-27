@@ -22,7 +22,7 @@ docker-compose stop
 ### Prerequisites
 1. Python 3.8.11
 2. [Poetry](https://python-poetry.org/docs/#installation) 
-3. Nodejs 16.2.0
+3. [Nodejs 16.2.0](https://nodejs.org/en/download/releases/)
 
 ### Starting the server
 ```shell
